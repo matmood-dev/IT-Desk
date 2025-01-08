@@ -1,0 +1,96 @@
+.homepage {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.homepageHeader {
+  background: linear-gradient(135deg, #008aad, #00b2df); /* Light blue gradient */
+  padding: 40px 20px;
+  color: white;
+  border-radius: 25px;
+}
+
+.homepageHeader h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+.services, .about, .contact {
+  margin: 40px 20px;
+  text-align: left;
+}
+
+.serviceCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(33% - 40px); /* Same width for all cards */
+  margin: 10px;
+  color: white; /* Ensure text color is white */
+  text-decoration: none; /* Remove underline from links */
+  min-width: 300px; /* Set a min-width to ensure consistency */
+  min-height: 70px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h3, .card p {
+  margin: 0;
+}
+
+.homepageFooter {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Mobile Friendly Design */
+@media (max-width: 768px) {
+  .homepageHeader h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+  }
+
+  .serviceCards {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: center; /* Center align cards */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Ensure all cards have the same width on mobile */
+    max-width: 300px; /* Set a max-width to ensure consistency */
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+}

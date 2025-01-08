@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    background: #1e1e1e;
+    padding: 20px;
+    color: white;
+    height: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Make it span the full width of the screen */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .logo {
+    position: absolute; /* Make the logo absolute positioned */
+    left: 50%; /* Center the logo */
+    transform: translateX(-50%); 
+  }
+  
+  .logoImage {
+    height: 60px;
+  }
+  
+  .hamburger {
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the hamburger icon stays above other elements */
+    background: none;
+    border: none;
+    color: white;
+    position: absolute; /* Make the hamburger icon absolute positioned */
+    right: 20px; /* Adjust the position as needed */
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    text-align: center;
+    justify-content: center; /* Center links vertically */
+    height: 100vh; /* Full height to center the links */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navLinks.open {
+    display: flex; /* Show links when open */
+  }
+  
+  .navLinks li {
+    margin: 20px 0; /* Add spacing between links */
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em; /* Increase font size for better visibility */
+    transition: color 0.3s;
+  }
+  
+  .navLinks a:hover {
+    color: #61dafb;
+  }
+  
+/* Add this to Navbar.module.css */
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.logoutButton:hover {
+  color: #61dafb;
+}

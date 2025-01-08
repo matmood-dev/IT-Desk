@@ -1,0 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #121212; /* Optional: Set a default background color */
+  color: #ffffff; /* Optional: Set a default text color */
+}

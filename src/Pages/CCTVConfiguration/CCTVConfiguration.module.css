@@ -1,0 +1,215 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.header {
+  background: linear-gradient(135deg, #008aad, #00b2df);
+  padding: 40px 20px;
+  color: white;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.main {
+  flex: 1;
+  text-align: left;
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #008aad;
+  color: white;
+}
+
+.addCameraButton, .exportButton {
+  background-color: #008aad;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.addCameraButton:hover, .exportButton:hover {
+  background-color: #005f7a;
+  transform: scale(1.05);
+}
+
+.addCameraButton:active, .exportButton:active {
+  background-color: #004856;
+  transform: scale(0.95);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for more contrast */
+}
+
+.modalContent {
+  background-color: #1e1e1e; /* Dark background to match overall theme */
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #444;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addCameraForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addCameraForm input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #2c2c2c; /* Match dark theme */
+  color: white;
+}
+
+.addCameraForm label {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ddd;
+  align-self: flex-start;
+  margin-left: 10%;
+  max-width: 300px;
+  width: 100%;
+}
+
+.addCameraForm button {
+  background-color: #008aad;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.addCameraForm button:hover {
+  background-color: #007a9c;
+}
+
+.editButton, .deleteButton {
+  background-color: #008aad;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.editButton:hover, .deleteButton:hover {
+  background-color: #007a9c;
+}
+
+/* Media Queries for Mobile Friendly Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+  }
+
+  .main {
+    margin: 10px; /* Reduce margin for mobile */
+  }
+
+  .addCameraForm label {
+    margin-left: 5%;
+    max-width: 100%;
+  }
+
+  .addCameraForm input, .addCameraForm button {
+    max-width: 100%;
+  }
+
+  .table th, .table td {
+    padding: 6px; /* Smaller padding for mobile */
+  }
+
+  .table {
+    display: block; /* Enable horizontal scrolling for mobile */
+    overflow-x: auto; /* Enable horizontal scrolling for mobile */
+    white-space: nowrap; /* Prevent wrapping of table rows */
+  }
+
+  .addCameraButton, .exportButton {
+    font-size: 16px; /* Smaller font size for mobile */
+    padding: 10px 20px; /* Adjust padding for mobile */
+  }
+
+  .modalContent {
+    width: 90%; /* Increase width for mobile */
+  }
+}

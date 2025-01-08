@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "service": "Fortinet",
+      "expiryDate": "2025-04-01",
+      "renewalPrice": 270
+    },
+    {
+      "id": 2,
+      "service": "Inmotion Host panel",
+      "expiryDate": "2025-02-01",
+      "renewalPrice": 770
+    },
+    {
+      "id": 3,
+      "service": "yas-holding.com",
+      "expiryDate": "2025-07-01",
+      "renewalPrice": 17
+    },
+    {
+      "id": 4,
+      "service": "yas-wood.com",
+      "expiryDate": "2025-09-01",
+      "renewalPrice": 17
+    },
+    {
+      "id": 5,
+      "service": "insurance-hub.net",
+      "expiryDate": "2025-07-01",
+      "renewalPrice": 300
+    },
+    {
+      "id": 6,
+      "service": "the-closets.com",
+      "expiryDate": "2025-04-17",
+      "renewalPrice": 17
+    }
+  ]
+  
