@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# IT Desk Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the IT Desk Management app developed using React and Firebase as the backend. The application is designed to streamline IT operations, allowing the IT desk to efficiently track and manage various configurations and services.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Service Expiry Tracker**: View, add, update, delete, and export service expiry information to PDF.
+- **CCTV Configuration**: Add, update, and delete CCTV configuration details.
+- **Mobile Number Configuration**: Add, update, and delete mobile number configuration details.
+- **Line Extensions Configuration**: Add, update, delete, and export line extensions configuration to PDF.
+- **PC List Configuration**: Add, update, and delete PC list configuration details.
+- **Authentication**: Secure access to the IT desk with authentication.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Firebase
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Functionalities
 
-### `npm test`
+### Service Expiry Tracker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **View**: Display a list of services with their expiry dates.
+- **Add**: Insert new service expiry details.
+- **Update**: Modify existing service expiry information.
+- **Delete**: Remove service expiry records.
+- **Export to PDF**: Generate a PDF report of service expiry details.
 
-### `npm run build`
+### CCTV Configuration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Add**: Insert new CCTV configuration details.
+- **Update**: Modify existing CCTV configuration information.
+- **Delete**: Remove CCTV configuration records.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Mobile Number Configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Add**: Insert new mobile number configuration details.
+- **Update**: Modify existing mobile number configuration information.
+- **Delete**: Remove mobile number configuration records.
 
-### `npm run eject`
+### Line Extensions Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Add**: Insert new line extensions configuration details.
+- **Update**: Modify existing line extensions configuration information.
+- **Delete**: Remove line extensions configuration records.
+- **Export to PDF**: Generate a PDF report of line extensions configuration.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### PC List Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Add**: Insert new PC list configuration details.
+- **Update**: Modify existing PC list configuration information.
+- **Delete**: Remove PC list configuration records.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Authentication
 
-## Learn More
+- **Secure Access**: Authentication to restrict access to authorized personnel only.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+![1](./images/1.png)
+![2](./images/2.png)
+![3](./images/3.png)
+![4](./images/4.png)
+![5](./images/5.png)
+![6](./images/6.png)
+![7](./images/7.png)
